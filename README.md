@@ -154,7 +154,7 @@ npm run dev
 
 ## Register
 
-![Register](/public/images/Register.png)
+![Register](/public/images/register.png)
 
 ---
 
