@@ -15,7 +15,11 @@ const postSchema = mongoose.Schema({
     likes: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "user"
-    }] 
+    }],
+    delete: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user"
+    }
 })
 
 module.exports = mongoose.model('post', postSchema)

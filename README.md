@@ -1,158 +1,201 @@
-# Mini Social Platform
+# 🚀 Mini Social Platform (MERN Stack)
 
-A full-stack web application that allows users to register, log in securely, upload a profile picture, create and edit posts, and like or unlike posts. Built using Node.js, Express.js, MongoDB, EJS, Tailwind CSS, JWT authentication, bcrypt password hashing, and Multer for image uploads.
-
----
-
-## 🚀 Features
-
-- 🔐 User Registration & Login
-- 🔑 JWT Authentication
-- 🔒 Password Hashing with bcrypt
-- 👤 User Profile
-- 🖼️ Profile Picture Upload
-- ✍️ Create Posts
-- 📝 Edit Posts
-- ❤️ Like & Unlike Posts
-- 💾 MongoDB Database Integration
-- 🎨 Responsive UI using Tailwind CSS
+A full-stack MERN social platform where users can register, log in securely, upload profile pictures, create and manage posts, browse posts from other users, visit public profiles, and like/unlike posts.
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Features
 
-### Frontend
-- EJS
+### 🔐 Authentication
+- User Registration
+- User Login
+- JWT Authentication
+- Password Hashing using bcrypt
+- Protected Routes
+- Logout
+
+### 👤 User Profile
+- View Personal Profile
+- Upload/Change Profile Picture
+- Public User Profiles
+- Visit Other Users' Profiles
+
+### 📝 Posts
+- Create Post
+- Edit and Delete Own Post
+- View Posts from All Users
+- Like/Unlike Posts
+- Real-time UI updates without page refresh
+
+### 🏠 Feed
+- View all users' posts
+- Visit any user's profile
+- Like/Unlike directly from Feed
+
+### 🎨 UI
+- Responsive Design
+- Modern React UI
 - Tailwind CSS
+- Toast Notifications
+- Smooth Hover Effects
+- Mobile Friendly
 
-### Backend
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Axios
+
+## Backend
 - Node.js
 - Express.js
 
-### Database
+## Database
 - MongoDB
 - Mongoose
 
-### Authentication & Security
+## Authentication
 - JWT (JSON Web Token)
 - bcrypt
 
-### File Upload
+## File Upload
 - Multer
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
 
 ```
-
-├── config/
-│   └── multerconfig.js
 │
-├── models/
-│   ├── user.js
-│   └── post.js
+├── client
+│   ├── public
+│   ├── src
+│   │   ├── assets
+│   │   ├── components
+│   │   ├── context
+│   │   ├── hooks
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
 │
-├── public/
-│   ├── images/
-│
-├── views/
-│   ├── index.ejs
-│   ├── login.ejs
-│   ├── profile.ejs
-│   ├── edit.ejs
-│   └── profileupload.ejs
-│
-├── index.js
+├── config
+├── models
+├── public
+├── server
 ├── package.json
+├── server.js
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone the repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/ajitjada/mini-social-app.git
 ```
 
-### Go to project directory
+## Move to Project Folder
 
 ```bash
-cd mini-social-app
+cd miniproject
 ```
 
-### Install dependencies
+---
+
+## Backend Setup
+
+Install backend dependencies
 
 ```bash
 npm install
 ```
 
-### Start MongoDB
-
-Make sure MongoDB is running locally.
-
-```
-mongodb://127.0.0.1:27017/miniApp
-```
-
-### Start the server
+Run backend
 
 ```bash
 node index.js
 ```
 
-Open your browser:
+---
 
+## Frontend Setup
+
+Move to client folder
+
+```bash
+cd client
 ```
-http://localhost:3000
+
+Install dependencies
+
+```bash
+npm install
 ```
+
+Start React application
+
+```bash
+npm run dev
+```
+
+
+# 📸 Screenshots
+
+## Register
+
+![Register](/public/images/Register.png)
 
 ---
 
-## 📸 Screenshots
+## Login
 
-
-### Register Page
-
-```
-![Register Page](/images/register.png)
-```
-
-### Login Page
-
-```
-![Login Page](/images/login.png)
-```
-
-### User Profile
-
-```
-![Profile Page](/images/profile.png)
-```
-
+![Login](/public/images/login.png)
 
 ---
 
-## 🎯 Future Improvements
+## Profile
 
-- Delete Posts
-- Comment System
-- Follow/Unfollow Users
-- User Search
+![Profile](/public/images/profile.png)
+
+---
+
+## Feed
+
+![Feed](/public/images/feed.png)
+
+---
+
+
+# 🔮 Future Improvements
+
+- Comments
+- Follow / Unfollow Users
+- Search Users
 - Notifications
-- Password Reset
-- Dark/Light Theme
-- Responsive Mobile Design
+- Stories
+- Saved Posts
+- Email Verification
+- Forgot Password
 
 ---
 
-## 👨‍💻 Author
+
+# 👨‍💻 Author
 
 **Ajit**
 
-GitHub: https://github.com/ajitjada
+GitHub:
+https://github.com/ajitjada
 
 ---
