@@ -46,7 +46,7 @@ A full-stack MERN social platform where users can register, log in securely, upl
 
 ## Frontend
 - React.js
-- Vite
+- Vite 
 - Tailwind CSS
 - React Router DOM
 - Axios
