@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import { Camera } from 'lucide-react';
 
 const Profile = () => {
-    const { user, logout, updateUser } = useAuth();
+    const { user, logout } = useAuth();
     const navigate = useNavigate();
     const [content, setContent] = useState('');
     const [posts, setPosts] = useState([]);

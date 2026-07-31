@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
     age: Number,
     profilepic: {
         type: String,
-        defalut: "default.png"
+        default: "default.png"
     },
     post: [
         {

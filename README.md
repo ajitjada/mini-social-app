@@ -72,48 +72,47 @@ A full-stack MERN social platform where users can register, log in securely, upl
 
 ```
 │
-├── client
-│   ├── public
-│   ├── src
-│   │   ├── assets
-│   │   ├── components
-│   │   ├── context
-│   │   ├── hooks
-│   │   ├── pages
-│   │   ├── services
+├── client/              # React (Vite) Frontend Application
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   ├── services/
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   ├── package.json
 │   └── vite.config.js
 │
-├── config
-├── models
-├── public
-├── server
-├── package.json
-├── server.js
+├── server/              # Node.js + Express Backend Service
+│   ├── config/          # Multer storage configuration
+│   ├── models/          # Mongoose data schemas (User, Post)
+│   ├── public/          # Static assets & user uploads
+│   ├── server.js        # Express application entrypoint
+│   └── package.json
+│
+├── package.json         # Workspace scripts & launcher
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Installation & Running
 
 ## Clone Repository
 
 ```bash
 git clone https://github.com/ajitjada/mini-social-app.git
-```
-
-## Move to Project Folder
-
-```bash
 cd miniproject
 ```
-
----
-
 ## Backend Setup
+
+Move to server folder
+
+```bash
+cd server
+```
 
 Install backend dependencies
 
@@ -124,11 +123,10 @@ npm install
 Run backend
 
 ```bash
-node index.js
+node server.js
 ```
 
 ---
-
 ## Frontend Setup
 
 Move to client folder
@@ -149,30 +147,31 @@ Start React application
 npm run dev
 ```
 
+---
 
 # 📸 Screenshots
 
 ## Register
 
-![Register](/public/images/register.png)
+![Register](./server/public/images/register.png)
 
 ---
 
 ## Login
 
-![Login](/public/images/login.png)
+![Login](./server/public/images/login.png)
 
 ---
 
 ## Profile
 
-![Profile](/public/images/profile.png)
+![Profile](./server/public/images/profile.png)
 
 ---
 
 ## Feed
 
-![Feed](/public/images/feed.png)
+![Feed](./server/public/images/feed.png)
 
 ---
 
